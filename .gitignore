@@ -34,7 +34,3 @@ backend/services/*.db
 *.njsproj
 *.sln
 *.sw?
-
-#IA
-src/components/ChatIA.jsx
-backend/routes/ChatIA.js
