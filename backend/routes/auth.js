@@ -3,7 +3,7 @@ const db = require("../database");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const router = express.Router();
-const JWT_SECRET = "medturno_secret_key";
+const JWT_SECRET = process.env.JWT_SECRET;
 
 router.post("/register", async (req, res) => {
     try {
