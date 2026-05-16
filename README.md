@@ -2,7 +2,7 @@
 
 Aplicación web para gestión de turnos médicos con IA integrada para consulta de síntomas.
 
-🔗 **Demo en vivo:** [medturno-5g69jn4yy-ludmirzs-projects.vercel.app](https://medturno-six.vercel.app/)
+🔗 **Demo en vivo:** (https://medturno-six.vercel.app/)
 
 ---
 
