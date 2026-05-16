@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
 const USE_MOCK = import.meta.env.VITE_USE_MOCK === "true";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3001/api"; 
 
 //mock IA (fake IA)
 const fakeIAResponse = (text) => {
@@ -147,7 +148,7 @@ export default function ChatIA({ onGoToTurnos }) {
 
     //IA real (proximo a implementar)
     try {
-      const res = await fetch("http://localhost:3001/api/chat", {
+      const res = await fetch(`${API_URL}/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),

@@ -2,8 +2,7 @@ import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import AuthModal from "./AuthModal";
 
-const API_URL = "http://localhost:3001/api";
-// const API_URL = "https://your-app.fly.dev/api";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3001/api";
 
 const ESPECIALIDADES = [
   { icon: "🩺", name: "Clínica General" },
